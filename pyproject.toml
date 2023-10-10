@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "machine-learning-exam"
+version = "0.1.0"
+description = ""
+authors = ["Jakob Cetti Hansen <jkbch@coga.io>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10"
+numpy = "^1.26.0"
+pandas = "^2.1.1"
+torch = "^2.1.0"
+torchvision = "^0.16.0"
+torchaudio = "^2.1.0"
+pycaret = {extras = ["full"], version = "^3.1.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
