@@ -1,3 +1,4 @@
 logs.log
 .ipynb_checkpoints/
 poetry.lock
+catboost_info/
