@@ -3,3 +3,4 @@ logs.log
 poetry.lock
 catboost_info/
 *.pkl
+data/.DS_Store
