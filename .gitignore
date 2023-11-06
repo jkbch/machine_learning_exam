@@ -3,3 +3,4 @@ logs.log
 catboost_info/
 *.pkl
 data/.DS_Store
+darts_logs/
