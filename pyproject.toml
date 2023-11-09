@@ -11,6 +11,7 @@ darts = "^0.26.0"
 jupyter = "^1.0.0"
 torch = {version = "2.1.0", source="torch"} # torch = {version = ">=2.0.0, !=2.0.1, !=2.1.0"}
 tsfresh = "^0.20.1"
+tqdm = "^4.66.1"
 
 [[tool.poetry.source]]
 name = "torch"
