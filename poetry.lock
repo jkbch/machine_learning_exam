@@ -396,6 +396,48 @@ webencodings = "*"
 css = ["tinycss2 (>=1.1.0,<1.3)"]
 
 [[package]]
+name = "catboost"
+version = "1.2.2"
+description = "CatBoost Python Package"
+optional = false
+python-versions = "*"
+files = [
+    {file = "catboost-1.2.2-cp310-cp310-macosx_11_0_universal2.whl", hash = "sha256:806189e8491d3ba5f6a24875689da2f997c95a21d2d32e92144ea391882a75a0"},
+    {file = "catboost-1.2.2-cp310-cp310-manylinux2014_aarch64.whl", hash = "sha256:2108673d05c6e961a1298aea0c722d6c7a0acca112d6ec14cf01a274486af6af"},
+    {file = "catboost-1.2.2-cp310-cp310-manylinux2014_x86_64.whl", hash = "sha256:0b17019ce42939a153895cd44430b50c49e3fa7ab65109f98c9a7df461359705"},
+    {file = "catboost-1.2.2-cp310-cp310-win_amd64.whl", hash = "sha256:dab0ad5f9dec575b7949ba58cc2ec029128d90611c45a6caa03f9d52d28f3420"},
+    {file = "catboost-1.2.2-cp311-cp311-macosx_11_0_universal2.whl", hash = "sha256:83f59b7526e5330a96d70f25e162c7a4ab9d9c9def234b48e325f1098c854c0f"},
+    {file = "catboost-1.2.2-cp311-cp311-manylinux2014_aarch64.whl", hash = "sha256:467b6e0064fe5a6aa7efc7f86a91dfe1266df91f623256db792095964b644d0e"},
+    {file = "catboost-1.2.2-cp311-cp311-manylinux2014_x86_64.whl", hash = "sha256:db151f661305b13d81d460df1f01580085671a24a71300abbbe17dc8d1c152a0"},
+    {file = "catboost-1.2.2-cp311-cp311-win_amd64.whl", hash = "sha256:0b8b5cdc2f1e1452018867a55902dc440d8a67a0869d5258f59b290d917cd73a"},
+    {file = "catboost-1.2.2-cp37-cp37m-macosx_11_0_universal2.whl", hash = "sha256:d82d2a2914a6dec8b95cc107d9b6686ad00b0177144561bce14e44ef4c91a488"},
+    {file = "catboost-1.2.2-cp37-cp37m-manylinux2014_aarch64.whl", hash = "sha256:d2a281797abc6e6572621c4c99a3aded9ef32b25bfdbf7824021f84f9fbebd63"},
+    {file = "catboost-1.2.2-cp37-cp37m-manylinux2014_x86_64.whl", hash = "sha256:d0f0e39ab9cb1e5287c785bc8a7448b2ebeff6257f4509693008043b8b24e53e"},
+    {file = "catboost-1.2.2-cp37-cp37m-win_amd64.whl", hash = "sha256:7714aeef4c079592f64b5cb79e78c0b5c636784b41bca882f5ff6d8f4481c734"},
+    {file = "catboost-1.2.2-cp38-cp38-macosx_11_0_universal2.whl", hash = "sha256:aa758d5a3cb1c4a5f87d2399ccc7879b63f3db711fc34b1c285b5499c4112234"},
+    {file = "catboost-1.2.2-cp38-cp38-manylinux2014_aarch64.whl", hash = "sha256:6ad09ae45d69bc0ea8685cb92e6df8db1f99796392bb54ba588c2291890eea66"},
+    {file = "catboost-1.2.2-cp38-cp38-manylinux2014_x86_64.whl", hash = "sha256:7a57052030cb0a7b8cc1db98d6de3c00f864b6f36275bc0608d85f9ea04df751"},
+    {file = "catboost-1.2.2-cp38-cp38-win_amd64.whl", hash = "sha256:fb0a8902b78179d9008e608f57626195726cd7328ac052f1ee2e46663bb8f964"},
+    {file = "catboost-1.2.2-cp39-cp39-macosx_11_0_universal2.whl", hash = "sha256:2a7c3a081af1da25c3d25e3be249ac85a979c5dd4ab4fba5c4f5742b83c8b434"},
+    {file = "catboost-1.2.2-cp39-cp39-manylinux2014_aarch64.whl", hash = "sha256:85459ee572e3e81f4cbde76b9ba08c3a2c9c31586861947bdbe95dbc29672205"},
+    {file = "catboost-1.2.2-cp39-cp39-manylinux2014_x86_64.whl", hash = "sha256:f6f3ae50f84a177455d0739ae08333db4fe2642278a8c287be95f2d6cdc9cdf8"},
+    {file = "catboost-1.2.2-cp39-cp39-win_amd64.whl", hash = "sha256:1c0c3973542c5c46898c157a9f545ad80a36b8d8b17d92424a07376818911162"},
+    {file = "catboost-1.2.2.tar.gz", hash = "sha256:c9381af807369fa6a24288a028eebbcfcec939c897ffd95729ca0f891d1d49c4"},
+]
+
+[package.dependencies]
+graphviz = "*"
+matplotlib = "*"
+numpy = ">=1.16.0"
+pandas = ">=0.24"
+plotly = "*"
+scipy = "*"
+six = "*"
+
+[package.extras]
+widget = ["ipython", "ipywidgets (>=7.0,<9.0)", "traitlets"]
+
+[[package]]
 name = "certifi"
 version = "2023.7.22"
 description = "Python package for providing Mozilla's CA Bundle."
@@ -593,6 +635,28 @@ files = [
     {file = "cloudpickle-3.0.0-py3-none-any.whl", hash = "sha256:246ee7d0c295602a036e86369c77fecda4ab17b506496730f2f576d9016fd9c7"},
     {file = "cloudpickle-3.0.0.tar.gz", hash = "sha256:996d9a482c6fb4f33c1a35335cf8afd065d2a56e973270364840712d9131a882"},
 ]
+
+[[package]]
+name = "cmdstanpy"
+version = "1.2.0"
+description = "Python interface to CmdStan"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "cmdstanpy-1.2.0-py3-none-any.whl", hash = "sha256:bbfe7b5fd64be0f559ca6496c3302b696497c1477dd73f106c1c601ea7e0550d"},
+    {file = "cmdstanpy-1.2.0.tar.gz", hash = "sha256:bdf55ab76f9eea01763b8990a56ff55d03e69ec31d9613fdbbe4c452126ff1bb"},
+]
+
+[package.dependencies]
+numpy = ">=1.21"
+pandas = "*"
+stanio = ">=0.3.0,<0.4.0"
+tqdm = "*"
+
+[package.extras]
+all = ["xarray"]
+docs = ["matplotlib", "numpydoc", "sphinx", "sphinx-gallery", "sphinx-rtd-theme"]
+tests = ["flake8", "mypy", "pylint", "pytest", "pytest-cov", "pytest-order", "tqdm", "xarray"]
 
 [[package]]
 name = "colorama"
@@ -1301,6 +1365,22 @@ cpp = ["fugue-sql-antlr-cpp (==0.1.8)"]
 test = ["speedy_antlr_tool"]
 
 [[package]]
+name = "graphviz"
+version = "0.20.1"
+description = "Simple Python interface for Graphviz"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "graphviz-0.20.1-py3-none-any.whl", hash = "sha256:587c58a223b51611c0cf461132da386edd896a029524ca61a1462b880bf97977"},
+    {file = "graphviz-0.20.1.zip", hash = "sha256:8c58f14adaa3b947daf26c19bc1e98c4e0702cdc31cf99153e6f06904d492bf8"},
+]
+
+[package.extras]
+dev = ["flake8", "pep8-naming", "tox (>=3)", "twine", "wheel"]
+docs = ["sphinx (>=5)", "sphinx-autodoc-typehints", "sphinx-rtd-theme"]
+test = ["coverage", "mock (>=4)", "pytest (>=7)", "pytest-cov", "pytest-mock (>=3)"]
+
+[[package]]
 name = "greenlet"
 version = "3.0.1"
 description = "Lightweight in-process concurrent programming"
@@ -1413,6 +1493,21 @@ zipp = ">=0.5"
 docs = ["furo", "jaraco.packaging (>=9)", "jaraco.tidelift (>=1.4)", "rst.linker (>=1.9)", "sphinx (>=3.5)", "sphinx-lint"]
 perf = ["ipython"]
 testing = ["flufl.flake8", "importlib-resources (>=1.3)", "packaging", "pyfakefs", "pytest (>=6)", "pytest-black (>=0.3.7)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=2.2)", "pytest-mypy (>=0.9.1)", "pytest-perf (>=0.9.2)", "pytest-ruff"]
+
+[[package]]
+name = "importlib-resources"
+version = "6.1.1"
+description = "Read resources from Python packages"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "importlib_resources-6.1.1-py3-none-any.whl", hash = "sha256:e8bf90d8213b486f428c9c39714b920041cb02c184686a3dee24905aaa8105d6"},
+    {file = "importlib_resources-6.1.1.tar.gz", hash = "sha256:3893a00122eafde6894c59914446a512f728a0c1a45f9bb9b63721b6bacf0b4a"},
+]
+
+[package.extras]
+docs = ["furo", "jaraco.packaging (>=9.3)", "jaraco.tidelift (>=1.4)", "rst.linker (>=1.9)", "sphinx (<7.2.5)", "sphinx (>=3.5)", "sphinx-lint"]
+testing = ["pytest (>=6)", "pytest-black (>=0.3.7)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=2.2)", "pytest-mypy (>=0.9.1)", "pytest-ruff", "zipp (>=3.17)"]
 
 [[package]]
 name = "ipykernel"
@@ -2013,6 +2108,29 @@ files = [
     {file = "kiwisolver-1.4.5-pp39-pypy39_pp73-win_amd64.whl", hash = "sha256:11d011a7574eb3b82bcc9c1a1d35c1d7075677fdd15de527d91b46bd35e935ee"},
     {file = "kiwisolver-1.4.5.tar.gz", hash = "sha256:e57e563a57fb22a142da34f38acc2fc1a5c864bc29ca1517a88abc963e60d6ec"},
 ]
+
+[[package]]
+name = "lightgbm"
+version = "4.1.0"
+description = "LightGBM Python Package"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "lightgbm-4.1.0-py3-none-macosx_10_15_x86_64.macosx_11_6_x86_64.macosx_12_5_x86_64.whl", hash = "sha256:f5794ab83ea5df5329675661e90e40dcfdabca844c801c351204f005fd44b31c"},
+    {file = "lightgbm-4.1.0-py3-none-manylinux2014_aarch64.whl", hash = "sha256:52023ca78e7584658b4024b8d08fa5b4cb83c469d6e3c78806b15d1867db586c"},
+    {file = "lightgbm-4.1.0-py3-none-manylinux_2_28_x86_64.whl", hash = "sha256:47578cff4bc8116b62adc02437bf2b49dcc7ad4e8e3dd8dad3fe88e694d74d93"},
+    {file = "lightgbm-4.1.0-py3-none-win_amd64.whl", hash = "sha256:384be334d7d8c76ce3894844c6487d788c7259a94c4710114ae6feaaa47dc29e"},
+    {file = "lightgbm-4.1.0.tar.gz", hash = "sha256:bee59dd269a93b093f2c610d4a6683a7ea87c63d3ea35c622123ce2c020b2abc"},
+]
+
+[package.dependencies]
+numpy = "*"
+scipy = "*"
+
+[package.extras]
+dask = ["dask[array,dataframe,distributed] (>=2.0.0)", "pandas (>=0.24.0)"]
+pandas = ["pandas (>=0.24.0)"]
+scikit-learn = ["scikit-learn (!=0.22.0)"]
 
 [[package]]
 name = "lightning-utilities"
@@ -2969,6 +3087,21 @@ docs = ["furo (>=2023.7.26)", "proselint (>=0.13)", "sphinx (>=7.1.1)", "sphinx-
 test = ["appdirs (==1.4.4)", "covdefaults (>=2.3)", "pytest (>=7.4)", "pytest-cov (>=4.1)", "pytest-mock (>=3.11.1)"]
 
 [[package]]
+name = "plotly"
+version = "5.18.0"
+description = "An open-source, interactive data visualization library for Python"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "plotly-5.18.0-py3-none-any.whl", hash = "sha256:23aa8ea2f4fb364a20d34ad38235524bd9d691bf5299e800bca608c31e8db8de"},
+    {file = "plotly-5.18.0.tar.gz", hash = "sha256:360a31e6fbb49d12b007036eb6929521343d6bee2236f8459915821baefa2cbb"},
+]
+
+[package.dependencies]
+packaging = "*"
+tenacity = ">=6.2.0"
+
+[[package]]
 name = "pmdarima"
 version = "2.0.4"
 description = "Python's forecast::auto.arima equivalent"
@@ -3082,6 +3215,34 @@ files = [
 
 [package.dependencies]
 wcwidth = "*"
+
+[[package]]
+name = "prophet"
+version = "1.1.5"
+description = "Automatic Forecasting Procedure"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "prophet-1.1.5-py3-none-macosx_10_9_x86_64.whl", hash = "sha256:1c522a76ce49264ad140bbebca7d1c7cdc9ebfe718cdcaaf2c289db96e9e03bd"},
+    {file = "prophet-1.1.5-py3-none-macosx_11_0_arm64.whl", hash = "sha256:24e7ce972f95068af7074dbad5846f83485257366b023af44e86716fb438bb0d"},
+    {file = "prophet-1.1.5-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:cd5991a86dc0a86e09da550fb072ade8714dc17741da0231907d972429476a54"},
+    {file = "prophet-1.1.5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:7761d127a41d3434b83d16f27b41cdc71052c7d98c0d6013a227a0bc55347da9"},
+    {file = "prophet-1.1.5-py3-none-win_amd64.whl", hash = "sha256:337d9cf7728b8d3ef18a8304aa90c079f206aead15d9f0beff87cad8050553ff"},
+    {file = "prophet-1.1.5.tar.gz", hash = "sha256:80973c0b8a22d835bfa9d6665a78ebc63115135eaef0f73b46ee14e9bad3ca1a"},
+]
+
+[package.dependencies]
+cmdstanpy = ">=1.0.4"
+holidays = ">=0.25"
+importlib-resources = "*"
+matplotlib = ">=2.0.0"
+numpy = ">=1.15.4"
+pandas = ">=1.0.4"
+tqdm = ">=4.36.1"
+
+[package.extras]
+dev = ["jupyterlab", "nbconvert", "plotly", "pytest", "setuptools (>=64)", "wheel"]
+parallel = ["dask[dataframe]", "distributed"]
 
 [[package]]
 name = "protobuf"
@@ -4124,6 +4285,23 @@ pure-eval = "*"
 tests = ["cython", "littleutils", "pygments", "pytest", "typeguard"]
 
 [[package]]
+name = "stanio"
+version = "0.3.0"
+description = ""
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "stanio-0.3.0-py3-none-any.whl", hash = "sha256:2d34b5ebe9ad8fcd137437209bf4b53846d88dbe933441aca5d83fd32f9b0c7e"},
+    {file = "stanio-0.3.0.tar.gz", hash = "sha256:0c504ae671b8d526a1da71185ac02a2775508ffe6d3db91f242eac85bcf6046f"},
+]
+
+[package.dependencies]
+numpy = "*"
+
+[package.extras]
+test = ["pandas", "pytest", "pytest-cov"]
+
+[[package]]
 name = "statsforecast"
 version = "1.6.0"
 description = "Time series forecasting suite using statistical models"
@@ -4265,6 +4443,20 @@ files = [
     {file = "tblib-3.0.0-py3-none-any.whl", hash = "sha256:80a6c77e59b55e83911e1e607c649836a69c103963c5f28a46cbeef44acf8129"},
     {file = "tblib-3.0.0.tar.gz", hash = "sha256:93622790a0a29e04f0346458face1e144dc4d32f493714c6c3dff82a4adb77e6"},
 ]
+
+[[package]]
+name = "tenacity"
+version = "8.2.3"
+description = "Retry code until it succeeds"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "tenacity-8.2.3-py3-none-any.whl", hash = "sha256:ce510e327a630c9e1beaf17d42e6ffacc88185044ad85cf74c0a8887c6a0f88c"},
+    {file = "tenacity-8.2.3.tar.gz", hash = "sha256:5398ef0d78e63f40007c1fb4c0bff96e1911394d2fa8d194f77619c05ff6cc8a"},
+]
+
+[package.extras]
+doc = ["reno", "sphinx", "tornado (>=4.5)"]
 
 [[package]]
 name = "tensorboardx"
@@ -4805,4 +4997,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "4504c7ce34fa694320585a260bc08dfd30ccf244e3444e127c730b37cd3975bd"
+content-hash = "f971691d5743cede3c3748ab5f60819bf3c329b53d3897680a5fc10c0971ea70"

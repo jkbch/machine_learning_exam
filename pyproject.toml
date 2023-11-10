@@ -13,6 +13,9 @@ torch = {version = "2.1.0", source="torch"} # torch = {version = ">=2.0.0, !=2.0
 tsfresh = "^0.20.1"
 tqdm = "^4.66.1"
 optuna = "^3.4.0"
+prophet = "^1.1.5"
+catboost = "^1.2.2"
+lightgbm = "^4.1.0"
 
 [[tool.poetry.source]]
 name = "torch"
